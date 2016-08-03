@@ -16,7 +16,7 @@ After bootstrapping a manager, the user and ssh-key provided to use it will be u
 See [bootstrapping]({{< relref "manager/bootstrapping.md" >}}) for more information.
 
 
-Usage: cfy bootstrap [OPTIONS] BLUEPRINT_PATH
+Usage: `cfy bootstrap [OPTIONS] BLUEPRINT_PATH`
 
 Bootstrap a Cloudify manager
 
@@ -32,8 +32,7 @@ Bootstrap a Cloudify manager
 
 #### Required flags
 
-* blueprint-path=BLUEPRINT_PATH` -
-                        The path to the desired manager blueprint
+* `BLUEPRINT_PATH` -    The path to the desired manager blueprint
 
 #### Optional flags
 
