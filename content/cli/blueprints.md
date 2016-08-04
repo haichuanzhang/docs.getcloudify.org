@@ -27,10 +27,9 @@ Usage: `cfy blueprints upload [options] BLUEPRINT_ID`
 
 Upload a blueprint to a manager. 
 
-#### Required flags
-
-*  `BLUEPRINT_PATH` -   The path to the application's blueprint file.
-                        (default: blueprint.yaml)
+`BLUEPRINT_PATH` can be either a local blueprint yaml file or blueprint
+archive; a url to a blueprint archive or an
+`organization/blueprint_repo[:tag/branch]` (to be retrieved from GitHub)
 
 #### Optional flags
 
@@ -98,9 +97,8 @@ Usage: `cfy blueprints package [OPTIONS] BLUEPRINT_PATH`
 
 Create a blueprint archive
 
-#### Required flags
-
-* `BLUEPRINT_PATH` is either the path to the blueprint yaml itself or to the directory in which the blueprint yaml files resides.
+`BLUEPRINT_PATH` -      is either the path to the blueprint yaml itself or to the directory in which the
+                        blueprint yaml files resides.
 
 #### Optional flags
 
@@ -127,9 +125,7 @@ Usage: `cfy blueprints download [OPTIONS] BLUEPRINT_ID`
 
 Download a blueprint from the manager.
 
-#### Required flags
-
-*  `BLUEPRINT_ID` -     is the id of the blueprint to download.
+`BLUEPRINT_ID` -        is the id of the blueprint to download.
 
 #### Optional flags
 
@@ -160,10 +156,7 @@ Validate a blueprint. This checks that the blueprint's syntax is valid and that 
 Import validation is done only on the client side. That means that if, for some reason, the imports are accessible by the client but not on the manager, this validation will still pass.
 {{% /gsNote %}}
 
-#### Required flags
-
-*  `BLUEPRINT_PATH` -   The path to the application's blueprint file.
-                        (default: blueprint.yaml)
+`BLUEPRINT_PATH` -      is the path of the blueprint to validate.
 
 &nbsp;
 #### Example
@@ -184,10 +177,8 @@ Usage: `cfy blueprints create-requirements [OPTIONS] BLUEPRINT_PATH`
 
 Generate a pip-compliant requirements file for a given blueprint
 
-#### Required flags
-
-* `BLUEPRINT_PATH` is the path to the blueprint for which the file will be
- generated.
+`BLUEPRINT_PATH` -      is the path to the blueprint for which the file will be
+                        generated.
 
 #### Optional flags
 
@@ -211,13 +202,12 @@ https://github.com/cloudify-cosmo/cloudify-diamond-plugin/archive/1.3.3.zip
 
 Usage: `cfy blueprints install-plugins [OPTIONS] BLUEPRINT_PATH`
 
-Install the necessary plugins for a given blueprint in the local environment.
+Install the necessary plugins for a given blueprint in the local
+environment.
 
 Currently only supports passing the YAML of the blueprint directly.
 
-#### Required flags
-
-* `BLUEPRINT_PATH` is the path to the blueprint to install plugins for.
+`BLUEPRINT_PATH` -      is the path to the blueprint to install plugins for.
 
 &nbsp;
 #### Example
@@ -274,11 +264,9 @@ Blueprints:
 
 Usage: `cfy blueprints get [OPTIONS] BLUEPRINT_ID`
 
-Retrieve information for a single blueprint.
+Retrieve information for a specific blueprint
 
-#### Required flags
-
-*  `BLUEPRINT_ID` -     A user provided blueprint ID
+`BLUEPRINT_ID` -        is the id of the blueprint to get information on.
 
 &nbsp;
 #### Example
@@ -310,9 +298,7 @@ Usage: `cfy blueprints inputs [OPTIONS] BLUEPRINT_ID`
 
 Retrieve inputs for a specific blueprint
 
-#### Required flags
-
-*  `BLUEPRINT_ID` -     A user provided blueprint ID
+`BLUEPRINT_ID` -        is the path of the blueprint to get inputs for.
 
 &nbsp;
 #### Example

@@ -20,19 +20,15 @@ Usage: `cfy bootstrap [OPTIONS] BLUEPRINT_PATH`
 
 Bootstrap a Cloudify manager
 
-  `BLUEPRINT_PATH` is a path to the manager-blueprint used to bootstrap the
-  manager.
+`BLUEPRINT_PATH` -      is a path to the manager-blueprint used to bootstrap the
+                        manager.
 
-  Note that `--validate-only` will validate resource creation without
-  actually validating the host's OS type, Available Memory, etc.. as the
-  host doesn't necessarily exist prior to bootstrapping.
+Note that `--validate-only` will validate resource creation without
+actually validating the host's OS type, Available Memory, etc.. as the
+host doesn't necessarily exist prior to bootstrapping.
 
-  `--skip-validations`, on the other hand, will skip both resource creation
-  validation AND any additional validations done on the host once it is up.
-
-#### Required flags
-
-* `BLUEPRINT_PATH` -    The path to the desired manager blueprint
+`--skip-validations`, on the other hand, will skip both resource creation
+validation AND any additional validations done on the host once it is up.
 
 #### Optional flags
 

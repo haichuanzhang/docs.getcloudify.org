@@ -18,14 +18,15 @@ You can use the command to create, delete, update and list deployments and to sh
 
 Usage: `cfy deployments create [OPTIONS] [DEPLOYMENT_ID]`
 
-Start an workflow execution for a specific deployment 
+Create a deployment on the manager
 
-#### Required flags
-
-*  `-b, --blueprint-id=BLUEPRINT_ID` -
-                        The blueprint's ID for which to create the deployment
+`DEPLOYMENT_ID` -       is the id of the deployment you'd like to create.
 
 #### Optional flags
+
+*  `-b, --blueprint-id TEXT` -   
+                        The unique identifier for the blueprint
+                        [required]
 
 *  `-d, --deployment-id=DEPLOYMENT_ID` -
                         A unique ID for the deployment
@@ -51,17 +52,11 @@ Deployment created. The deployment's id is simple-python-webserver-blueprint
 
 ### update
 
-Usage: `cfy deployments update simple-python-webserver-blueprint -p simple-python-webserver-blueprint/blueprint.yaml`
+Usage: `cfy deployments update [OPTIONS] DEPLOYMENT_ID`
 
-Update a specified deployment according to the specified blueprint.
+Update a specified deployment according to the specified blueprint
 
-#### Required flags
-
-*  `DEPLOYMENT_ID` -    The id of the deployment to update
-
-*  `-p, --blueprint-path=BLUEPRINT_PATH` -
-                        The path to the application's blueprint file.
-                        (default: blueprint.yaml)
+`DEPLOYMENT_ID` -       is the deployment's id to update.
 
 #### Optional flags
 
