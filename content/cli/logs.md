@@ -4,7 +4,7 @@ title: logs
 category: Docs
 draft: false
 abstract: Cloudify's Command-Line Interface
-weight: 120
+weight: 110
 ---
 
 The `cfy logs` command is used to manage log files on a Cloudify manager.

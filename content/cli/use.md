@@ -17,16 +17,12 @@ After bootstrapping a manager, the user and ssh-key provided to use it will be u
 
 Usage: `cfy use [OPTIONS] MANAGER_IP`
 
-  Control a specific manager
+Control a specific manager
 
-  Additional CLI commands will be added after a manager is used. To stop
-  using a manager, you can run `cfy init -r`.
+`MANAGEMENT_IP` is the IP of the manager to use.
 
-#### Required flags
-
-*  `MANAGEMENT_IP` - 	is the IP of the manager to use.
-
-*  `MANAGEMENT_IP` - 	The Manager's ip address. Note that this might either be a publically available IP 							address or an address in a private network - depending on your bootstrap inputs.
+Additional CLI commands will be added after a manager is used. To stop
+using a manager, you can run `cfy init -r`.
 
 #### Optional flags
 
