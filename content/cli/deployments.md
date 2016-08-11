@@ -104,14 +104,11 @@ Usage: `cfy deployments delete [OPTIONS] DEPLOYMENT_ID`
 
 Delete an existing deployment. It's important to note that deleting a deployment does not mean deleting the resources of an application - for which you need to run the `uninstall` workflow (unless a custom uninstall workflow is provided).
 
-#### Required flags
-
-*  `DEPLOYMENT_ID` -    The ID of the deployment to delete
+`DEPLOYMENT_ID` -       The ID of the deployment to delete
 
 #### Optional flags
 
-*  `-f, --ignore-live-nodes` - 
-                        Delete the deployment even if there are existing live nodes for it
+*  `-f, --force` -      Delete the deployment even if there are existing live nodes for it
 
 &nbsp;
 #### Example
@@ -171,9 +168,7 @@ Usage: `cfy deployments outputs [OPTIONS] DEPLOYMENT_ID`
 
 Lists all outputs for a deployment. Note that not every deployment has outputs and it depends on whether or not outputs were defined in the blueprint from which the deployment was created
 
-#### Required flags
-
-* `DEPLOYMENT_ID` - The ID of the deployment you would like to list outputs for.
+`DEPLOYMENT_ID` -       The ID of the deployment you would like to list outputs for.
 
 &nbsp;
 #### Example
